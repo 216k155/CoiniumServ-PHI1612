@@ -111,5 +111,3 @@ UpgradeLog*.XML
 
 # Misc
 Thumbs.db
-/build/.vs/config
-/contrib/xunit
