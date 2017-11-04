@@ -33,7 +33,7 @@ using HashLib;
 namespace CoiniumServ.Algorithms.Implementations
 {
 	// anorganix start
-	// added PHI1612 support (BHCoin)
+	// added PHI1612 support (LUXCoin)
 	// anorganix end
     public sealed class PHI1612 : IHashAlgorithm
     {

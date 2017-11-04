@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{02E410C9-83C5-4D63-8902-5AD041EBEB6C}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,18 +15,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoiniumServ.Tests", "..\src\Tests\CoiniumServ.Tests.csproj", "{73CE2C0A-12E6-42FD-8021-C75827D014E3}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://pirlitu.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ..\\src\\CoiniumServ\\CoiniumServ.csproj
-		SccProjectName1 = ../src/CoiniumServ
-		SccLocalPath1 = ..\\src\\CoiniumServ
-		SccProjectUniqueName2 = ..\\src\\Tests\\CoiniumServ.Tests.csproj
-		SccProjectName2 = ../src/Tests
-		SccLocalPath2 = ..\\src\\Tests
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms

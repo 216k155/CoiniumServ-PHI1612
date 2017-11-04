@@ -165,7 +165,7 @@ namespace CoiniumServ.Jobs.Manager
 
                 // TODO: convert generation transaction to ioc & DI based.
                 var generationTransaction = new GenerationTransaction(ExtraNonce, _daemonClient, blockTemplate, _poolConfig);
-				generationTransaction.Create();
+                generationTransaction.Create();
 
                 // create the job notification.
                 var job = new Job(_jobCounter.Next(), _hashAlgorithm, blockTemplate, generationTransaction)

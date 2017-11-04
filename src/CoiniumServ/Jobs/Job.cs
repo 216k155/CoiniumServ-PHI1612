@@ -112,10 +112,8 @@ namespace CoiniumServ.Jobs
             // calculate the merkle tree
             MerkleTree = new MerkleTree(BlockTemplate.Transactions.GetHashList());
         
-
             // set version
             Version = BitConverter.GetBytes(blockTemplate.Version.BigEndian()).ToHexString();
-
 
             // set the encoded difficulty (bits)
             EncodedDifficulty = blockTemplate.Bits;

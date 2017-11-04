@@ -42,21 +42,11 @@ namespace CoiniumServ.Algorithms.Implementations
         {
             _hashers = new List<IHash>
             {
-				// anorganix start
-				/*
                 HashFactory.Crypto.SHA3.CreateBlake512(),
                 HashFactory.Crypto.SHA3.CreateGroestl512(),
                 HashFactory.Crypto.SHA3.CreateSkein512(),
                 HashFactory.Crypto.SHA3.CreateJH512(),
                 HashFactory.Crypto.SHA3.CreateKeccak512()
-				*/
-
-				HashFactory.Crypto.SHA3.CreateBlake512(),
-                HashFactory.Crypto.SHA3.CreateGroestl512(),
-				HashFactory.Crypto.SHA3.CreateJH512(),
-                HashFactory.Crypto.SHA3.CreateKeccak512(),
-                HashFactory.Crypto.SHA3.CreateSkein512()
-				// anorganix end
             };
 
             Multiplier = 1;

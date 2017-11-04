@@ -75,7 +75,8 @@ namespace CoiniumServ.Statistics
         {
             _stopWatch.Start();
 
-			Pools.Recache();
+            // recache data.
+            Pools.Recache();
             Algorithms.Recache();
             RecacheGlobal();            
 

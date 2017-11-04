@@ -141,9 +141,6 @@ namespace CoiniumServ.Transactions
             TxMessage = Serializers.SerializeString(poolConfig.Meta.TxMessage);
             LockTime = 0;
 
-			// transaction signature
-			var signature = "/Kosmonavt Stratum/";
-
             // transaction inputs
             Inputs = new List<TxIn>
             {
@@ -161,9 +158,9 @@ namespace CoiniumServ.Transactions
                             blockTemplate.CoinBaseAux.Flags,
                             TimeHelpers.NowInUnixTimestamp(),
                             (byte) extraNonce.ExtraNoncePlaceholder.Length,
-                            signature)
+                            "/CoiniumServ/")
                 }
-            };
+            }; 
 
             // transaction outputs
             Outputs = new Outputs(daemonClient, poolConfig.Coin);
@@ -188,7 +185,7 @@ namespace CoiniumServ.Transactions
             // create the first part.
             using (var stream = new MemoryStream())
             {
-				stream.WriteValueU32(Version.LittleEndian());
+                stream.WriteValueU32(Version.LittleEndian()); // write version
 
                 if(PoolConfig.Coin.Options.IsProofOfStakeHybrid) // if coin is a proof-of-stake coin
                     stream.WriteValueU32(BlockTemplate.CurTime); // include time-stamp in the transaction.

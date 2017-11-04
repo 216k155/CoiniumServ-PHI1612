@@ -36,29 +36,29 @@ namespace CoiniumServ.Algorithms
     public class AlgorithmRegistry : IRegistry
     {
         // algorithm names
-        public const string Blake = "blake";
-        public const string Fresh = "fresh";
-        public const string Fugue = "fugue";
-        public const string Groestl = "groestl";
-        public const string Keccak = "keccak";
-        public const string Nist5 = "nist5";
+		public const string Blake = "blake";
+		public const string Fresh = "fresh";
+		public const string Fugue = "fugue";
+		public const string Groestl = "groestl";
+		public const string Keccak = "keccak";
+		public const string Nist5 = "nist5";
 		public const string PHI1612 = "phi";
-        public const string Qubit = "qubit";
-        public const string Scrypt = "scrypt";
-        public const string ScryptOg = "scrypt-og";
-        public const string ScryptN = "scrypt-n";
-        public const string Sha1 = "sha1";
-        public const string Sha256 = "sha256";
-        public const string Shavite3 = "shavite3";
-        public const string Skein = "skein";
+		public const string Qubit = "qubit";
+		public const string Scrypt = "scrypt";
+		public const string ScryptOg = "scrypt-og";
+		public const string ScryptN = "scrypt-n";
+		public const string Sha1 = "sha1";
+		public const string Sha256 = "sha256";
+		public const string Shavite3 = "shavite3";
+		public const string Skein = "skein";
 		public const string Skunk = "skunk";
 		public const string Tribus = "tribus";
-        public const string X11 = "x11";
+		public const string X11 = "x11";
 		public const string X11Gost = "x11gost";
-        public const string X13 = "x13";
-        public const string X14 = "x14";
-        public const string X15 = "x15";
-        public const string X17 = "x17";
+		public const string X13 = "x13";
+		public const string X14 = "x14";
+		public const string X15 = "x15";
+		public const string X17 = "x17";
 
         // todo: add hefty1, qubit support
 
@@ -95,7 +95,7 @@ namespace CoiniumServ.Algorithms
             _applicationContext.Container.Register<IHashAlgorithm, X15>(X15).AsMultiInstance();
             _applicationContext.Container.Register<IHashAlgorithm, X17>(X17).AsMultiInstance();
 
-			// custom algos added by anorganix
+			// anorganix
 			_applicationContext.Container.Register<IHashAlgorithm, PHI1612>(PHI1612).AsMultiInstance();
 			_applicationContext.Container.Register<IHashAlgorithm, Skunk>(Skunk).AsMultiInstance();
 			_applicationContext.Container.Register<IHashAlgorithm, Tribus>(Tribus).AsMultiInstance();
